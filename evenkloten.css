@@ -1,0 +1,105 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgba(22, 22, 22, 0.9); */
+    background-image: url("https://wallpaperaccess.com/full/1390893.jpg");
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    background-color: #fff34b;
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 1%;
+    padding-right: 1%;
+    opacity: 80%;
+}
+
+#menucontainer {
+    background-color: #fff34b;
+    width: 80%;
+    min-height: 40px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    opacity: 80%;
+}
+
+.menuoption {
+    width: 19%;
+    height: 1.5em;
+    border: 1px solid black;
+    border-radius: 3%;
+    font-size: 85%;
+    background-color: #000000;
+    flex-shrink: 1;
+}
+
+#mainwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+    text-decoration: underline dotted;
+}
+
+.navigatiebar {
+    /* display: flex; */
+    color: aliceblue;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top: 4%;
+    /* margin: 0 auto; */
+}
+
+.mainbar {
+    /* display: flex; */
+    color: aliceblue;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+    /* margin: 0 auto; */
+}
+
+.mainbar img {
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.reclamebar {
+    /* display: flex; */
+    color: aliceblue;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 4%;
+    margin-top: 4%;
+    /* margin: 0 auto; */
+}
+
+ul, li, a {
+    color: whitesmoke;
+}
