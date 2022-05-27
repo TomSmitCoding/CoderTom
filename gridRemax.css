@@ -1,0 +1,552 @@
+/* This section is to remove some default styling */
+body {
+    /* margin-left: 48px;
+    margin-right: 48px; */
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* This section is the grid container and the grid items */
+#gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
+
+.whitebar, .navbar, .houseimg, .floorplans, .availability, .choicesandupgrades, .downloads {
+    /* background-color: rgb(151, 182, 16); */
+    text-align: center;    
+}
+
+.whitebar {
+    grid-column: 1 / span 4;
+    grid-row: 1 / 1;
+    background-color: rgba(255, 255, 255, 100%);
+    color: rgb(193, 14, 14);
+    position: sticky;
+    top: -0.7em;
+}
+
+.navbar {
+    height: 5em;
+    grid-column: 1 / span 4;
+    grid-row: 2 / 2;
+    background-color: rgba(233, 233, 233, 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 2.5em;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100px;
+    margin: 0;
+    position: fixed;
+    top: 2.2em;
+    left: 3.2em;
+    z-index: 99;
+}
+
+.inlinelist {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+a.underline {
+    text-decoration: underline 1px !important;
+    text-underline-offset: 3px;
+}
+
+a.underline:hover {
+    text-decoration: underline 2px !important;
+    text-underline-offset: 4px;
+    transition: ease 0.9s;
+}
+
+a.nounderline:hover {
+    text-decoration: underline 1px !important;
+    text-underline-offset: 4px;
+    transform: translate(5px, 25%) !important;
+    transition: 1s !important;
+    transition: ease 0.9s;        
+}   
+
+li {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.redphonenumber {
+    color: rgb(192, 11, 11);
+}
+
+.houseimg {
+    grid-column: 1 / span 4;
+}
+
+.theactualimg {
+    width: 100%;
+    height: 100%;
+}
+
+.floorplans {
+    grid-column: 1 / span 1;
+    background-color: rgb(183, 48, 48);
+    height: 7em;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: none; */
+    border: 2px solid transparent;
+    /* box-sizing: border-box; */
+}
+
+.floorplans:hover {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white; 
+    transition: ease 0.2s;
+    
+}
+
+.availability {
+    grid-column: 2 / span 1;
+    background-color: rgb(200, 53, 53);
+    height: 7em;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.availability:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transition: ease 0.2s;
+}
+
+.choicesandupgrades {
+    grid-column: 3 / span 1;
+    background-color: rgb(222, 52, 52);
+    height: 7em;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.choicesandupgrades:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transition: ease 0.2s;
+}
+
+.downloads  {
+    grid-column: 4 / span 1;
+    background-color: rgb(188, 48, 48);
+    height: 7em;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.downloads:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transition: ease 0.2s;
+
+}
+
+
+.housephoto {
+    grid-column: 1 / span 2;
+    width: 100.5%;
+    height: 100%;
+}
+
+.houseinfo {
+    grid-column: 3 / span 2;
+    padding-left: 3em;
+    padding-top: 3em;
+    
+}
+
+.houseinfotext {
+    line-height: 150%;
+}
+
+.houseinfotitle {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 22px;
+}
+
+.houseinfoprice {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(192, 11, 11);
+    font-weight: bold !important;
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+.houseinfoadres {
+    font-family: 'Raleway', sans-serif;
+    font-size: smaller;
+    color: black;
+    margin-top: 0;
+}
+
+.houseinfobuttons {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    border-width: 1px;
+    padding: 2% 6% 2% 6%;
+    margin-top: 1em;
+    transition: ease 1s;
+}
+
+.houseinfobuttons:hover {
+    border-width: 0.9px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color:rgb(157, 0, 0);
+    color: white;
+}
+
+.houseinfobuttons1 {
+    background-color: rgb(157, 0, 0);
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: white;
+    border-width: 1px;
+    padding: 2% 6% 2% 6%;
+    margin-top: 1em;
+}
+
+.houseinfobuttons1:hover {
+    border-width: 0.9px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transition: ease 0.2s;
+}
+
+.searchnow {
+    background-color: rgb(235, 235, 235);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textsection1 {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 35em;
+    margin-top: 2.5em;
+    margin-bottom: -1em;
+}
+
+.textsection2 {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50em;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.textsection3 {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 35em;
+}
+
+.spansize {
+    font-size: 12px;
+}
+
+.markhenson {
+    color: rgb(202, 0, 0) !important;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.phonenr {
+    margin-left: 0.4em;
+    margin-right: 0.5em;
+    color: rgb(202, 0, 0);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 1.4px;
+    font-size: 13px;
+}
+
+.formsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 450px;
+    margin-top: 0.7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+}
+
+.fieldstyle {
+    background-color: rgb(244, 244, 244);
+    padding: 0.5em; 
+    margin: 0.3em;
+    border: 0.5px solid rgb(162, 161, 161);
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: black;
+}
+
+.fieldstyle:nth-child(5) {
+    width: 25em;
+}
+
+#submitbutton {
+    background-color: rgb(228, 1, 1);
+    color: rgb(242, 242, 242);
+    border-radius: 4%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 5px;
+    margin-right: 9em; 
+
+}
+
+.formh2 {
+    margin-right: 5.5em;
+    margin-bottom: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.formh2test {
+    font-size: 30px;
+}
+
+.footbar {
+    background-color: rgb(184, 0, 0);
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footbarspan {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+.footcontainer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutus {
+    width: 35%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px; 
+}
+
+.quicklinks {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+}
+
+.getintouch {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+}
+
+.spanfontsize{
+font-size: 12px;
+}
+
+.phonetekenfoot {
+    background-color: rgb(243, 243, 243);
+    font-size: 10px;
+}
+
+
+/* DIT ZIJN DOWNLOADABLE SYMBOLS VAN WESBITE: CSS.GG */
+.gg-pentagon-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 8px
+   }
+   
+   .gg-pentagon-right:before {
+    height: 51%
+   }
+   
+   .gg-pentagon-right:after,
+   .gg-pentagon-right:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%
+   }
+   
+   .gg-pentagon-right:before {
+    top: -2px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: skewX(30deg)
+   }
+   
+   .gg-pentagon-right:after {
+    bottom: -2px;
+    height: 50%;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: skewX(-30deg)
+   } 
+
+   /* ZELF VERZONNEN TEST OM PENTAGON TUSSEN TEXT TE KRIJGEN */
+   .gg-pentagon-right-s {
+    box-sizing: border-box;
+    position: relative;
+    display: inline;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 8px;
+    margin-left: 0.5em;
+    color: rgb(202, 0, 0);
+   }
+   
+   .gg-pentagon-right-s:before {
+    height: 51%
+   }
+   
+   .gg-pentagon-right-s:after,
+   .gg-pentagon-right-s:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%
+   }
+   
+   .gg-pentagon-right-s:before {
+    top: -2px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: skewX(30deg)
+   }
+   
+   .gg-pentagon-right-s:after {
+    bottom: -2px;
+    height: 50%;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: skewX(-30deg)
+   } 
+
+   .phoneteken {
+        content: "\1F4DE";
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+        margin-left: 5px;      
+   }
+
+   .houseteken {
+       font-size: 20px;
+   }
+
+   .houseteken2 {
+    font-size: 20px;
+}
